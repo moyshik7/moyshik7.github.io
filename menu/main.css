@@ -1,0 +1,69 @@
+ *{
+
+	box-sizing:border-box;
+
+}
+
+body{
+
+	font-family: 'Roboto', sans-serif;
+
+}
+
+.main{
+
+	width:100%;
+
+}
+
+.main td{
+
+	width:50%;
+
+	text-align:center;
+
+	padding:5px;
+
+}
+
+.main td a{
+
+	text-decoration:none;
+
+	color:#ff6f61;
+
+	width:100%;
+
+	display:block;
+
+	border:1px solid #ff6f61;
+
+	border-radius:10px;
+
+	padding:5px;
+
+	padding-top:15px;
+
+	padding-bottom:15px;
+
+}
+
+.main td a:hover{
+
+	border:0px solid black;
+
+	box-shadow: 0 4px 8px 0 #737373, 0 6px 20px 0 #737373;
+
+}
+
+.main td a i{
+
+	font-size:50px;
+
+}
+
+.main td a .des{
+
+	font-size:15px;
+
+}
