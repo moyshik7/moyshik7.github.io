@@ -7,12 +7,12 @@ main = () => {
 		card.setAttribute('id',ourObj.id);
 		//card.setAttribute('onclick','load()')
 		if(i%2==0){
-			txt += '<table border="0"><tr><td class="logo"><img src="./res/def'; // res for GitHub .res for local
+			txt += '<table border="0"><tr><td class="logo"><img src="/res/def'; // res for GitHub .res for local
 			txt += ourObj.difficulty + '.jpg"></td><td class="title">';
 			txt += ourObj.name +'</td></tr></table>';
 		}else{
 			txt += '<table border="0"><tr><td class="title">';
-			txt += ourObj.name + '</td><td class="logo"><img src="./res/def'; // res for GitHub .res for local
+			txt += ourObj.name + '</td><td class="logo"><img src="/res/def'; // res for GitHub .res for local
 			txt += ourObj.difficulty + '.jpg" ></td></tr></table>';
 		}
 		card.innerHTML = txt;
