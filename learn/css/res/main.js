@@ -1,6 +1,6 @@
 main = () => {
-	for(let i=0; i< html.length; i++){
-		let ourObj = html[i];
+	for(let i=0; i< css.length; i++){
+		let ourObj = css[i];
 		let txt = "";
 		let card = document.createElement('div');
 		card.setAttribute('class',"card");
@@ -8,10 +8,10 @@ main = () => {
 		//card.setAttribute('onclick','load()')
 		if(i%2==0){
 			txt += '<table border="0"><tr><td class="logo"><img src="/res/def'; // res for GitHub .res for local
-			txt += ourObj.difficulty + '.jpg"></td><td class="title">';
+			txt += ourObj.difficulty + '.jpg"></td><td class="title l">';
 			txt += ourObj.name +'</td></tr></table>';
 		}else{
-			txt += '<table border="0"><tr><td class="title">';
+			txt += '<table border="0"><tr><td class="title r">';
 			txt += ourObj.name + '</td><td class="logo"><img src="/res/def'; // res for GitHub .res for local
 			txt += ourObj.difficulty + '.jpg" ></td></tr></table>';
 		}
@@ -31,7 +31,7 @@ load = (seen) => {
 	setCookie("lessonID",seen.id);
 	window.location.href = "/console";
 }
-var html = [
+const css = [
 	{
 		id : "10001",
 		name : "Introduction",
