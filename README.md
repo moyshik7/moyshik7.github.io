@@ -1,5 +1,7 @@
 # plubin
-This page is available on [moyshik7.github.io](https://moyshik7.github.io/) \n
+This page is available on [moyshik7.github.io](https://moyshik7.github.io/) 
 #### Note: This page is still in pre alpha
 > Some graphic items are subject to copyright
-> Otherwise, It's free
+> Otherwise, Feel free to use it
+### All Online resource list:
+
