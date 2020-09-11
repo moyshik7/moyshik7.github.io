@@ -34,7 +34,7 @@ main = () => {
 
 	var id = getCookie("lessonID"); //use const
 
-	id = "10001";
+
 
 	if(id == "" || id == null){
 
