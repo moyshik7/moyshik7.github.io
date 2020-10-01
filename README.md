@@ -1,5 +1,5 @@
 # Plubin  
-https://img.shields.io/npm/l/express  
+![NPM](https://img.shields.io/npm/l/express)
 This page is available on [moyshik7.github.io](https://moyshik7.github.io/)  
 #### Version : 0.1.14  
 #### This site is still in pre alpha  
