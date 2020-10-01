@@ -1,10 +1,10 @@
 {
-    "name": "dis",
-    "version": "1.0.0",
+    "name": "Plubin",
+    "version": "0.1.17",
     "description": "",
-    "main": "index.js",
+    "main": "index.html",
     "dependencies": {
-        "discord.js": "^12.3.1"
+
     },
     "devDependencies": {
         "nodemon": "^2.0.4"
