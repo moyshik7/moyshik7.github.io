@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+			*{
+				box-sizing:border-box;
+			}
+			body{
+				background-color:#6b5b95;
+				padding:3px;
+				font-family: 'Poppins', sans-serif;
+			}
+			.accordion {
+				background-color: #ff6f61;
+				color:white;
+				padding: 18px;
+				width: 100%;
+				text-align: left;
+				border: none;
+				outline: none;
+				transition: 0.4s;
+				border-radius:5px;
+				font-family:monospace;
+				font-weight:800;
+				font-size:20px;
+			}
+			.panel {
+				padding: 0px;
+				background-color: #ffd0cc;
+				display:block;
+				overflow: hidden;
+				border-radius:5px;
+				width:100%;
+				float:left;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			.panel p{
+				padding:10px;
+				display:none;
+				font-size:16px;
+				width:100%;
+				line-height:30px;
+			}
+			code{
+				background-color:gray;
+				color:white;
+				font-family:monospace;
+				font-weight:600;
+				padding:3px;
+				padding-left:7px;
+				padding-right:7px;
+				border-radius:4px;
+			}
+			.footer{
+				background-color:#00cc00;
+				float:left;
+				width:100%;
+				padding:20px;
+				border-radius:5px;
+			}
+			.footer a{
+				text-decoration:none;
+				width:100%;
+				float:left;
+			}
+			.footer a div{
+				width:100%;
+				border:0px solid red;
+				border-radius:5px;
+				padding:10px;
+				font-size:20px;
+				text-align:center;
+				display:block;
+				font-weight:600;
+				color:white;
+				float:left;
+			}
+			.patreon {
+				background-color:#ffb3b3;
+			}
+			.ig{
+				background-color:#ffcc99;
+			}
+			.spc{
+				width:100%;
+				float:left;
+				height:10px;
+			}
+			b{
+				font-weight:800;
+				font-size:20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="commands">
+			<div class="panel">
+				<button class="accordion">.anime</button>
+				<p>Suggests you a random anime Movie / Series.<br>
+					Usage: <code>.anime</code></p>
+			</div>
+			<div class="spc"></div>
+			<div class="panel">
+				<button class="accordion">.catgirl</button>
+				<p>Gives you a random Catgirl / Neko picture.<br>
+					Usage: <code>.catgirl</code><br>
+					Note: NSFW picture will be given in NSFW channels and SFW in SFW channels</p>
+			</div>
+			<div class="spc"></div>
+			<div class="panel">
+				<button class="accordion">.help</button>
+				<p>Gives you a list of all commands.<br>
+					Usage: <code>.help</code></p>
+			</div>
+			<div class="spc"></div>
+			<div class="panel">
+				<button class="accordion">.hentai</button>
+				<p>Gives you a random H E N T A I image / gif.<br>
+					Usage: <code>.hentai</code><br>
+					Note: Only available for NSFW channels</p>
+			</div>
+			<div class="spc"></div>
+			<div class="panel">
+				<button class="accordion">.neko</button>
+				<p>Gives you a random Neko / Catgirl picture.<br>
+					Usage: <code>.neko</code><br>
+					Note: NSFW picture will be given in NSFW channels and SFW in SFW channels</p>
+			</div>
+			<div class="spc"></div>
+			<div class="panel">
+				<button class="accordion">.wallpaper</button>
+				<p>Gives you a wallpaper.<br>
+					Usage: <code>.wallpaper</code>  <code>&lt;type&gt;</code><br>
+					<code>&lt;type&gt;</code>&nbsp;&nbsp;<b>:</b>&nbsp;&nbsp;<code>anime</code> • <code>cat</code> • <code>landscape</code> • <code>pet</code> • <code>plant</code> • <code>puppy</code><br>
+					For random just use <code>.wallpaper</code></p>
+			</div>
+			<div class="spc"></div>
+			<div class="panel">
+				<button class="accordion">.wp</button>
+				<p>Gives you a wallpaper.<br>
+					Usage: <code>.wp</code>  <code>&lt;type&gt;</code><br>
+					<code>&lt;type&gt;</code>&nbsp;&nbsp;<b>:</b>&nbsp;&nbsp;<code>anime</code> • <code>cat</code> • <code>landscape</code> • <code>pet</code> • <code>plant</code> • <code>puppy</code><br>
+					For random just use <code>.wp</code></p>
+			</div>
+			<div class="spc"></div>
+		</div>
+		<div class="footer">
+			<a href="https://www.patreon.com/plubin" >
+				<div class="patreon">Be our Patreon</div>
+			</a>
+			<div class="spc"></div>
+			<a href="https://www.instagram.com/plu.bin/" >
+				<div class="ig">Follow us on Instagram</div>
+			</a>
+		</div>
+		<div class="spc"></div>
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var pp = document.getElementsByClassName("pp");
+			var i;
+			
+			for (i = 0; i < acc.length; i++) {
+				acc[i].addEventListener("click", function() {
+					//this.classList.toggle("active");
+					var panel = this.nextElementSibling;
+					if (panel.style.display === "block") {
+						panel.style.display = "none";
+					} else {
+						panel.style.display = "block";
+					}
+				});
+			}
+		</script>
+	</body>
+</html>
