@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style type="text/css">
+			*{
+				box-sizing:border-box;
+			}
+			body{
+				padding:7px;
+			}
+			.mspc{
+				float:left;
+				width:100%;
+				height:25px;
+				display:block;
+			}
+			[class*="col-"] {
+				float: left;
+				padding: 3px;
+				width:100%;
+			}
+			.row {
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+				border-radius:10px;
+				float:left;
+				width:100%;
+			}
+			.row::after {
+				content: "";
+				clear: both;
+				display:table;
+			}
+			@media only screen and (min-width: 768px) {
+				.col-1 {width: 8.33%;}
+				.col-2 {width: 16.66%;}
+				.col-3 {width: 25%;}
+				.col-4 {width: 33.33%;}
+				.col-5 {width: 41.66%;}
+				.col-6 {width: 50%;}
+				.col-7 {width: 58.33%;}
+				.col-8 {width: 66.66%;}
+				.col-9 {width: 75%;}
+				.col-10 {width: 83.33%;}
+				.col-11 {width: 91.66%;}
+				.col-12 {width: 100%;}
+				.mspc{display:none;}
+			}
+			#root{
+				display:block;
+			}
+			#uui{
+				display:none;
+			}
+			.col-3{
+				padding:10px;
+				padding-top:40px;
+				border:0px solid grey;
+				padding-bottom:15px;
+			}
+			.col-3 div:nth-child(1) {
+				text-align:center;
+				font-size:60px;
+				color:#ff6f61;
+			}
+			.col-3 div:nth-child(2)  {
+				width:100%;
+				text-align:right;
+				padding-top:30px;
+				padding-right:5px;
+				font-size:20px;
+				color:#6b5b95;
+			}
+			.spc{
+				float:left;
+				width:100%;
+				height:25px;
+				display:block;
+			}
+			.col-12{
+				padding:35px;
+				text-align:center;
+				font-size:30px;
+				color:#6b5b95;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="spc"></div>
+		<div id="root">
+			<div class="row">
+				<div class="col-3">
+					<div id="day"></div>
+					<div>Days</div>
+				</div>
+				<div class="mspc"></div>
+				<div class="col-3">
+					<div id="hr"></div>
+					<div>Hours</div>
+				</div>
+				<div class="mspc"></div>
+				<div class="col-3">
+					<div id="min"></div>
+					<div>Minutes</div>
+				</div>
+				<div class="mspc"></div>
+				<div class="col-3">
+					<div id="sec"></div>
+					<div>Seconds</div>
+				</div>
+				<div class="mspc"></div>
+			</div>
+			<div class="spc"></div>
+			<div class="row">
+				<div class="col-12">
+					Left for Oyshik to turn 18
+				</div>
+			</div>
+		</div>
+		<div id="uui">
+			<div class="row">
+				<div class="col-12">
+					Oyshik is already 18
+				</div>
+			</div>
+		</div>
+		<div class="spc"></div>
+		<div class="spc"></div>
+		<script type="text/javascript">
+			const bday = new Date(2021,2,16);
+			let now,left,day,hr,min,sec,st;
+			setInterval(main = () => {
+				now = new Date();
+				left = bday.getTime() - now.getTime();
+				console.log(left);
+				if(left > 0){
+					left = Math.floor(left/1000);
+					day = Math.floor(left/(60*60*24));
+					left = left - day*60*60*24;
+					hr = Math.floor(left/(60*60));
+					left = left - hr*60*60;
+					min = Math.floor(left/(60));
+					left = left - min*60;
+					sec = left;
+					document.getElementById('day').innerHTML=day;
+					document.getElementById('hr').innerHTML=hr;
+					document.getElementById('min').innerHTML=min;
+					document.getElementById('sec').innerHTML=sec;
+				}else if(left<=0){
+					document.getElementById('uui').style.display='block';
+					document.getElementById('root').style.display='none';
+				}else{
+					console.log("error");
+				}
+			},1000);
+			main();
+		</script>
+	</body>
+</html>
