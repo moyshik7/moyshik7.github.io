@@ -1,0 +1,95 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	padding:5px;
+}
+.tb{ /*Title Box*/
+	width:100%;
+	border:0px solid red;
+	padding:5px;
+	padding-top:20px;
+	padding-bottom:20px;
+	text-align:center;
+	font-size:40px;
+	float:left;
+	border-radius:10px;
+	color:#F4B400;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.box{
+	width:100%;
+	border:0px solid red;
+	padding:5px;
+	padding-top:30px;
+	padding-bottom:30px;
+	float:left;
+	border-radius:10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.box .num {
+	color:ff6f61;
+	font-size:70px;
+	width:100%;
+	text-align:center;
+	padding-top:30px;
+}
+.box .ph{
+	text-align:right;
+	width:100%;
+	font-size:20px;
+	padding-right:10px;
+}
+.spc{
+	width:100%;
+	height:30px;
+	float:left;
+	display:block;
+}
+.set input{
+	width:50%;
+	float:left;
+	font-size:20px;
+	padding:10px;
+	border:2px solid #4285F4;
+	border-top-left-radius:7px;
+	border-bottom-left-radius:7px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.set span{
+	width:50%;
+	float:left;
+	font-size:20px;
+	padding:10px;
+	text-align:right;
+	color:white;
+	background-color:#4285F4;
+	border:2px solid #4285F4;
+	border-top-right-radius:7px;
+	border-bottom-right-radius:7px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.str button{
+	width:100%;
+	float:left;
+	font-size:20px;
+	padding:10px;
+	padding-left:0px;
+	padding-right:0px;
+	text-align:center;
+	color:white;
+	background-color:#ff6f61;
+	border:2px solid #ff6f61;
+	border-top-right-radius:7px;
+	border-bottom-right-radius:7px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);p
+}
+#sett {
+	display:block;
+}
+#cd {
+	display:none;
+}
+#finished {
+	display:none;
+}
